@@ -1,0 +1,40 @@
+[credential]
+wallet_path = "./id.json"
+rpc_endpoint = 
+submit_endpoint = 
+laser_endpoint = 
+laser_token = 
+
+[services]
+confirm_service = "RPC"        # JITO / LIL_JIT / ZERO_SLOT / NOZOMI / RPC / HELIUS
+jito_api_key = 
+nozomi_api_key = 
+zero_slot_key = 
+bloxroute_key = 
+liljit_endpoint = 
+astralane_key = 
+blockrazor_key = 
+nextblock_key =
+jupiter_endpoint = 
+jupiter_api_key = 
+
+[arbitrage]
+mother_token = [
+    { token_addr = "", threshold = 0.000001, min_profit_amount = 0.01, input_amount_range = [
+        0.01,
+        500,
+    ], input_amount_steps = 20 },
+]
+nonce_addr = ""
+
+[fee] ####   HERE is FEE SETTING    ####
+cu = 550000
+priority_fee_micro_lamport = 50000
+third_party_fee = 0.0001
+
+[telegram]
+telegram_bot_key = ""
+group_channel_id = -1002912014386
+
+[protect]
+protect_key = true
